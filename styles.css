@@ -3,3 +3,62 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+:root {
+  font-size: 62.5%;
+  --bg-card: #e1e1e6;
+  --bg-card-selected: #02799d;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100vh;
+}
+
+span {
+  font-size: 12.6rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.clock {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.timer-controls {
+  padding: 0 0.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.timer-controls img:hover {
+  scale: 1.05;
+  cursor: pointer;
+  transition: scale 0.3s;
+}
+
+.hide {
+  display: none;
+}
+
+.card {
+  padding: 4.8rem 4.2rem 4.8rem;
+  background: var(--bg-card);
+  border-radius: 24px;
+  transition: scale 0.3s;
+}
+
+.card:hover {
+  scale: 1.05;
+  cursor: pointer;
+}
+
+.themes-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3.2rem;
+}

@@ -1,9 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-bre">
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Focus Timer</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <main>
@@ -14,20 +21,31 @@
           <span class="seconds">00</span>
         </div>
         <div class="timer-controls">
-          <img src="./assets/playButton.svg" alt="" />
-          <img src="./assets/pauseButton.svg" alt="" />
-
-          <img src="./assets/setButton.svg" alt="" />
-          <img src="./assets/stopButton.svg" alt="" />
-          <img src="./assets/addButton.svg" alt="" />
-          <img src="./assets/removeButton.svg" alt="" />
+          <img src="./assets/playButton.svg" alt="" class="play-button" />
+          <img
+            src="./assets/pauseButton.svg"
+            alt=""
+            class="pause-button hide"
+          />
+          <img src="./assets/setButton.svg" alt="" class="set-button" />
+          <img src="./assets/stopButton.svg" alt="" class="stop-button hide" />
+          <img src="./assets/addButton.svg" alt="" class="add-button" />
+          <img src="./assets/removeButton.svg" alt="" class="remove-button" />
         </div>
       </div>
       <div class="themes-box">
-        <div class="card"><img src="./assets/forestIcon.svg" alt="" /></div>
-        <div class="card"><img src="./assets/rainIcon.svg" alt="" /></div>
-        <div class="card"><img src="./assets/coffeeIcon.svg" alt="" /></div>
-        <div class="card"><img src="./assets/fireIcon.svg" alt="" /></div>
+        <div class="card forest-card">
+          <img src="./assets/forestIcon.svg" alt="" />
+        </div>
+        <div class="card rain-card">
+          <img src="./assets/rainIcon.svg" alt="" />
+        </div>
+        <div class="card store-card">
+          <img src="./assets/coffeeIcon.svg" alt="" />
+        </div>
+        <div class="card fire-card">
+          <img src="./assets/fireIcon.svg" alt="" />
+        </div>
       </div>
     </main>
   </body>
