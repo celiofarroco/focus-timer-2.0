@@ -36,9 +36,11 @@ span {
 }
 
 .timer-controls img:hover {
-  scale: 1.05;
   cursor: pointer;
-  transition: scale 0.3s;
+}
+
+.pause-button {
+  scale: 0.92;
 }
 
 .hide {
