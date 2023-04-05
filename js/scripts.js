@@ -75,7 +75,7 @@ function addFiveMinutes() {
   let currentSeconds = Number(secondsDisplay.textContent);
   currentMinutes += 5;
   minutesDisplay.textContent = currentMinutes;
-  setMinutes = minutesDisplay.textContent;
+
   updateDisplay(currentMinutes, currentSeconds);
 }
 
@@ -87,7 +87,7 @@ function removeFiveMinutes() {
     return;
   }
   minutesDisplay.textContent = currentMinutes;
-  setMinutes = minutesDisplay.textContent;
+
   updateDisplay(currentMinutes, currentSeconds);
 }
 
