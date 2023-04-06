@@ -186,6 +186,7 @@ function fireplaceSoundControl() {
   }
 
   sound.fireplaceSound.play();
+
   fireplaceImg.style.filter =
     "invert(1) sepia(1) saturate(0) hue-rotate(180deg)";
   isPlaying = true;
