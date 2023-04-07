@@ -10,6 +10,20 @@
   --bg-card-selected: #02799d;
 }
 
+.darkmode {
+  position: relative;
+}
+.darkmode img {
+  position: absolute;
+  top: 6rem;
+  right: 6rem;
+  transition: scale 0.3s;
+}
+
+.darkmode img:hover {
+  scale: 1.1;
+  cursor: pointer;
+}
 main {
   display: flex;
   align-items: center;
