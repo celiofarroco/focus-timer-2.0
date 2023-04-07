@@ -3,25 +3,24 @@ export default function Controls({
   pauseButton,
   setButton,
   stopButton,
-  setMinutes,
   minutesDisplay,
+  secondsDisplay,
+  updateDisplay,
+  setMinutes,
 }) {
   function play() {
     playButton.classList.add("hide");
     pauseButton.classList.remove("hide");
     setButton.classList.add("hide");
     stopButton.classList.remove("hide");
-    setMinutes = minutesDisplay.textContent;
-    countdown();
   }
 
-  function pauseTimer() {
+  function pause() {
     playButton.classList.remove("hide");
     pauseButton.classList.add("hide");
-    pause();
   }
 
-  function setTime() {
+  function set() {
     let minutes = String(prompt()).padStart(2, 0);
     setMinutes = Number(minutes);
     console.log(setMinutes);
@@ -30,13 +29,11 @@ export default function Controls({
     stopButton.classList.remove("hide");
   }
 
-  function stopTimer() {
+  function stop() {
     playButton.classList.remove("hide");
     pauseButton.classList.add("hide");
     setButton.classList.remove("hide");
     stopButton.classList.add("hide");
-    reset();
-    minutesDisplay.textContent = setMinutes;
   }
 
   function addFiveMinutes() {
@@ -56,7 +53,20 @@ export default function Controls({
       return;
     }
     minutesDisplay.textContent = currentMinutes;
-
     updateDisplay(currentMinutes, currentSeconds);
   }
+
+  function updateDisplay(newMinutes, newSeconds) {
+    secondsDisplay.textContent = String(newSeconds).padStart(2, 0);
+    minutesDisplay.textContent = String(newMinutes).padStart(2, 0);
+  }
+
+  return {
+    play,
+    pause,
+    set,
+    stop,
+    addFiveMinutes,
+    removeFiveMinutes,
+  };
 }

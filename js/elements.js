@@ -10,10 +10,6 @@ const removeButton = document.querySelector(".remove-button");
 const minutesDisplay = document.querySelector(".minutes");
 const secondsDisplay = document.querySelector(".seconds");
 
-//Variáveis de controle
-let setMinutes;
-let timerTimeout;
-
 //Cards de Temas
 const forestCard = document.querySelector(".forest-card");
 const rainCard = document.querySelector(".rain-card");
