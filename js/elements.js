@@ -26,6 +26,10 @@ const fireplaceImg = document.querySelector(".fireplace-img");
 const lightModeButton = document.querySelector(".light-mode");
 const darkModeButton = document.querySelector(".dark-mode");
 
+const page = document.querySelector(".page");
+const cards = document.querySelectorAll(".card");
+const timerControls = document.querySelector(".timer-controls");
+
 export const elements = {
   playButton,
   pauseButton,
@@ -45,4 +49,7 @@ export const elements = {
   fireplaceImg,
   lightModeButton,
   darkModeButton,
+  page,
+  cards,
+  timerControls,
 };

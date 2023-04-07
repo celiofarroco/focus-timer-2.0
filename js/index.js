@@ -2,6 +2,7 @@ import Sound from "./sounds.js";
 import { elements } from "./elements.js";
 import Controls from "./controls.js";
 import Timer from "./timer.js";
+import DarkMode from "./darkmode.js";
 let setMinutes;
 
 const {
@@ -23,7 +24,18 @@ const {
   fireplaceImg,
   lightModeButton,
   darkModeButton,
+  page,
+  cards,
+  timerControls,
 } = elements;
+
+const darkmode = DarkMode({
+  lightModeButton,
+  darkModeButton,
+  page,
+  cards,
+  timerControls,
+});
 
 const controls = Controls({
   playButton,
@@ -138,3 +150,10 @@ forestCard.addEventListener("click", forestSoundControl);
 rainCard.addEventListener("click", rainSoundControl);
 coffeeshopCard.addEventListener("click", storeSoundControl);
 fireplaceCard.addEventListener("click", fireplaceSoundControl);
+
+lightModeButton.addEventListener("click", function () {
+  darkmode.dark();
+});
+darkModeButton.addEventListener("click", function () {
+  darkmode.light();
+});

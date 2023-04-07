@@ -8,6 +8,12 @@
   font-size: 62.5%;
   --bg-card: #e1e1e6;
   --bg-card-selected: #02799d;
+  --bg-card-dark: #29292e;
+}
+
+.dark-toggle {
+  background-color: black;
+  color: white;
 }
 
 .darkmode {
@@ -73,6 +79,22 @@ span {
   background: var(--bg-card);
   border-radius: 24px;
   transition: scale 0.3s;
+}
+
+div .dark-toggle {
+  background-color: var(--bg-card-dark);
+}
+
+div .dark-toggle img {
+  filter: invert(1) sepia(1) saturate(0) hue-rotate(180deg);
+}
+
+div .darker img {
+  filter: invert(1) sepia(1) saturate(0) hue-rotate(180deg);
+}
+
+div .darker {
+  background-color: black;
 }
 
 .card:hover {
