@@ -26,4 +26,4 @@ O Focus Timer 2.0 foi desenvolvido usando as seguintes tecnologias:
 
 Se você quiser contribuir para o projeto Focus Timer 2.0, sinta-se à vontade para abrir um pull request ou report
 
-![Focus Timer 2.0](https://github.com/celiofarroco/focus-timer-2.0/blob/main/Focus%20Timer%202.0%20-%20Demo.mp4)
+
