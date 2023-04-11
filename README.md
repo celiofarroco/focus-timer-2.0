@@ -25,3 +25,5 @@ O Focus Timer 2.0 foi desenvolvido usando as seguintes tecnologias:
 ## Contribuição
 
 Se você quiser contribuir para o projeto Focus Timer 2.0, sinta-se à vontade para abrir um pull request ou report
+
+
