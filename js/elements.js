@@ -28,6 +28,8 @@ const darkModeButton = document.querySelector(".dark-mode");
 
 const page = document.querySelector(".page");
 const cards = document.querySelectorAll(".card");
+const cardsImg = document.querySelectorAll(".card-img");
+const volumeSlider = document.querySelectorAll(".volume-slider");
 const timerControls = document.querySelector(".timer-controls");
 
 export const elements = {
@@ -51,5 +53,7 @@ export const elements = {
   darkModeButton,
   page,
   cards,
+  cardsImg,
+  volumeSlider,
   timerControls,
 };
